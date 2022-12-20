@@ -6,8 +6,6 @@
 6. What is the average rental rate per movie genre (rating)? */
 use sakila;
 -- 1. Tables used: customer, payment
-SELECT * FROM customer;
-SELECT * FROM payment;
 SELECT CONCAT (c.first_name, ' ' , c.last_name) full_name , c.email, sum(amount) total_spent
 FROM customer c
 INNER JOIN payment p ON c.customer_id = p.customer_id
